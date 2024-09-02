@@ -5,12 +5,12 @@ from datetime import datetime
 import openpyxl
 import os
 
-API_KEY = "8CGU8BAEBD8UL5W8"
+API_KEY = "6QZ3IT21J6UL0M24"
 
 # Load the list of Indian stocks from the provided Excel file
 @st.cache_data
 def load_indian_stocks():
-    file_path = "C:\\Users\\DELL\\Desktop\\ERP\\data.xlsx"  # Path to the uploaded Excel file
+    file_path = "C:\\Users\\DELL\\Desktop\\StockLog\\data.xlsx" # Path to the uploaded Excel file
     df = pd.read_excel(file_path)
     stocks_dict = df.set_index("Symbol")["Company Name"].to_dict()
     return stocks_dict
