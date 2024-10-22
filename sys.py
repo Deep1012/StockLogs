@@ -8,7 +8,7 @@ import os
 # Set page config with stock icon
 st.set_page_config(page_title="Stock Management System", page_icon="📈")
 
-API_KEY = "6QZ3IT21J6UL0M24"
+API_KEY = "JHIOOJG4RIWGHBBO"
 
 # Load the list of Indian stocks from the provided Excel file
 @st.cache_data
